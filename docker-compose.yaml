@@ -39,6 +39,8 @@ services:
       CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
       CONFLUENT_METRICS_ENABLE: 'false'
       CONFLUENT_SUPPORT_CUSTOMER_ID: 'anonymous'
+      CONFLUENT_TELEMETRY_ENABLED: 'false'
+      KAFKA_CONFLUENT_TELEMETRY_ENABLED: 'false'
     networks:
       - confluent
     healthcheck:
